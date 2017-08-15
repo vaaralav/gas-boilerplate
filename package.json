@@ -1,0 +1,30 @@
+{
+  "name": "gas-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for Google Apps Script projects with Webpack and Flow.",
+  "main": "index.js",
+  "author": "Ville Vaarala <ville.l.vaarala@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn webpack",
+    "lint": "eslint src --fix && yarn flow --quiet"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "7",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-gas": "^1.0.0",
+    "eslint": "3.x",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-googleappsscript": "^1.0.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "flow-bin": "^0.52.0",
+    "flow-typed": "^2.1.5",
+    "gas-webpack-plugin": "^0.2.1",
+    "prettier": "^1.5.3",
+    "webpack": "^3.5.4"
+  }
+}
