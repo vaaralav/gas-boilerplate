@@ -1,5 +1,6 @@
 // @flow
 import print from './print';
+import upperFirst from 'lodash/upperFirst';
 
 Logger.log(UrlFetchApp.fetch('https://google.fi').getContentText());
 
@@ -8,7 +9,7 @@ export type Msg = {
 };
 
 const msg: Msg = {
-  msg: 'Hello World!',
+  msg: upperFirst('hello world!'),
 };
 
 print(msg);

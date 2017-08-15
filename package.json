@@ -28,5 +28,8 @@
     "gas-webpack-plugin": "^0.2.1",
     "prettier": "^1.5.3",
     "webpack": "^3.5.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
   }
 }
