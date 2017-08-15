@@ -21,4 +21,6 @@ const foo = () => {
   print(bar);
 };
 
+// Expose foo to the global scope so
+// it can be used via GAS Executable API
 global.foo = foo;
