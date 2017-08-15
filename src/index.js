@@ -13,8 +13,11 @@ const msg: Msg = {
 
 print(msg);
 
-function foo() {
-  print('foo');
+const foo = () => {
+  const foo = {msg: foo};
+  const bar = Object.assign({}, foo);
+  print(foo);
+  print(bar);
 }
 
 global.foo = foo;

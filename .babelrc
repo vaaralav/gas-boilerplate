@@ -1,3 +1,4 @@
 {
-  "presets": ["env", "flow", "gas"]
+  "presets": ["env", "stage-2", "flow", "gas"],
+  "plugins": ["transform-object-assign"]
 }
