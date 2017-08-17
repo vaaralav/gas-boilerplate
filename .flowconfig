@@ -8,3 +8,4 @@ decls/
 [options]
 
 [lints]
+all=warn

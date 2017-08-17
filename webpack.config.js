@@ -1,3 +1,4 @@
+/* eslint-env node */
 const path = require('path');
 const GasPlugin = require('gas-webpack-plugin');
 
@@ -5,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename:'index.js'
+    filename: 'index.js',
   },
   module: {
     rules: [
@@ -15,13 +16,11 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env', 'flow', 'gas']
-          }
-        }
-      }
-    ]
+            presets: ['env', 'flow', 'gas'],
+          },
+        },
+      },
+    ],
   },
-  plugins: [
-  new GasPlugin()
-  ],
-}
+  plugins: [new GasPlugin()],
+};

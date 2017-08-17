@@ -1,9 +1,17 @@
 {
-  "extends": ["plugin:flowtype/recommended", "prettier", "prettier/flowtype"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:flowtype/recommended",
+    "prettier",
+    "prettier/flowtype"
+  ],
   "parser": "babel-eslint",
   "plugins": ["googleappsscript", "prettier", "flowtype"],
   "env": {
     "googleappsscript/googleappsscript": true
+  },
+  "globals": {
+    "global": false
   },
   "rules": {
     "prettier/prettier": ["error", "fb"],
