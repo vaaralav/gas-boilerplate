@@ -3,7 +3,8 @@
     "eslint:recommended",
     "plugin:flowtype/recommended",
     "prettier",
-    "prettier/flowtype"
+    "prettier/flowtype",
+    "plugin:prettier/recommended"
   ],
   "parser": "babel-eslint",
   "plugins": ["googleappsscript", "prettier", "flowtype"],
@@ -14,7 +15,6 @@
     "global": false
   },
   "rules": {
-    "prettier/prettier": ["error", "fb"],
     "no-unused-vars": "warn"
   }
 }

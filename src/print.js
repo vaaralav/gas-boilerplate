@@ -1,6 +1,6 @@
 // @flow
-import type {Msg} from './index';
+import type { Msg } from './index';
 
-export default ({msg}: Msg): void => {
+export default ({ msg }: Msg): void => {
   Logger.log(msg);
 };

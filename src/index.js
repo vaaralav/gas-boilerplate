@@ -15,10 +15,11 @@ const msg: Msg = {
 print(msg);
 
 const foo = () => {
-  const foo = {msg: 'foo'};
+  const foo = { msg: 'foo' };
   const bar = Object.assign({}, foo);
   print(foo);
   print(bar);
+  return foo;
 };
 
 // Expose foo to the global scope so
