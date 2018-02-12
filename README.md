@@ -1,6 +1,6 @@
 # gas-boilerplate
 
-Boilerplate for Google Apps Script projects.
+Boilerplate project for writing Google Apps Script in ES6 and using NPM packages in your project.
 
 ## What's included?
 
@@ -13,6 +13,31 @@ Boilerplate for Google Apps Script projects.
 ## Prerequisites
 
 1. Connect Google Apps Script to your Google Drive
+
+## Usage: Bootstrap your Apps Script project
+
+### Getting started
+
+```shell
+git clone https://github.com/vaaralav/gas-boilerplate.git my-awesome-project
+cd my-awesome-project
+rm -rf .git && git init # Initialize your project's git repository
+yarn # Install dependencies
+```
+
+### Development
+
+The source files are located at `src/`. To start coding open `src/index.js` in your editor.
+
+#### Scripts
+
+* `yarn lint`: Lint your code
+* `yarn lint:fix`: Lint and autofix your code (uses prettier & eslint)
+* `yarn build`: Compile your code. By default the project is built to `dist/index.js`.
+
+### Move the compiled code to the cloud
+
+Copy and paste the contents of `dist/index.js` to the Google Apps Script file, eg. `Code.gs`.
 
 ## Usage for standalone Google Apps Scripts and Node.js
 
@@ -28,5 +53,5 @@ Boilerplate for Google Apps Script projects.
 
 ## What's coming next?
 
-* [`gas`](https://www.npmjs.com/package/google-apps-script) support
+* [`clasp`](https://www.npmjs.com/package/@google/clasp)
 * Instructions for GAS deployment/development flows
