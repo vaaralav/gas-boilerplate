@@ -1,4 +1,4 @@
 {
-  "presets": ["env", "stage-2", "flow", "gas"],
-  "plugins": ["transform-object-assign"]
+  "presets": ["@babel/env", "@babel/flow", "gas"],
+  "plugins": ["@babel/transform-object-assign", "lodash"]
 }

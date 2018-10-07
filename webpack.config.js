@@ -1,6 +1,7 @@
 /* eslint-env node */
 const path = require('path');
 const GasPlugin = require('gas-webpack-plugin');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -15,12 +16,9 @@ module.exports = {
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['env', 'flow', 'gas'],
-          },
         },
       },
     ],
   },
-  plugins: [new GasPlugin()],
+  plugins: [new GasPlugin(), new LodashModuleReplacementPlugin()],
 };

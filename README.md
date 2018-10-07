@@ -4,11 +4,11 @@ Boilerplate project for writing Google Apps Script in ES6 and using NPM packages
 
 ## What's included?
 
-* ES6
-* Webpack
-* Flow
-* Prettier
-* Eslint
+- ES6
+- Webpack
+- Flow
+- Prettier
+- Eslint
 
 ## Prerequisites
 
@@ -31,9 +31,9 @@ The source files are located at `src/`. To start coding open `src/index.js` in y
 
 #### Scripts
 
-* `yarn lint`: Lint your code
-* `yarn lint:fix`: Lint and autofix your code (uses prettier & eslint)
-* `yarn build`: Compile your code. By default the project is built to `dist/index.js`.
+- `yarn lint`: Lint your code
+- `yarn lint:fix`: Lint and autofix your code (uses prettier & eslint)
+- `yarn build`: Compile your code. By default the project is built to `dist/index.js`.
 
 ### Move the compiled code to the cloud
 
@@ -53,5 +53,5 @@ Copy and paste the contents of `dist/index.js` to the Google Apps Script file, e
 
 ## What's coming next?
 
-* [`clasp`](https://www.npmjs.com/package/@google/clasp)
-* Instructions for GAS deployment/development flows
+- [`clasp`](https://www.npmjs.com/package/@google/clasp)
+- Instructions for GAS deployment/development flows
