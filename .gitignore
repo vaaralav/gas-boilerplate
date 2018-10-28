@@ -72,4 +72,8 @@ typings/
 # Serverless directories
 .serverless
 
-dist/
+# Google Apps Script CLI
+.clasp.json
+
+dist/**/*
+!dist/appsscript.json
